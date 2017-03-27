@@ -17,11 +17,13 @@ public class Estudiante extends Persona {
     }
     
     public double promedio(){
+        double promedio =0;
         for (int i = 0; i < 5; i++) {
-            double promedio = this.getNotas()[i]
+            promedio = this.getNotas()[i];
             promedio += promedio;
+            return promedio;
             }
-       return promedio;
+     return promedio; 
     }
 
     public String getMateria() {
